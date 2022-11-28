@@ -30,3 +30,14 @@ const greeting = (lal,name)=>{
     console.log(" hello "+lal() + name);
 }
 greeting(myfun," dhawan");   // myfun is callback fun here
+
+// function as a return value
+function a(){
+    return function b(){
+        console.log("hello world");
+    }
+}
+
+a()(); // hello world
+const c = a();
+c(); // hello world
