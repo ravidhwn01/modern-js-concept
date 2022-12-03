@@ -1,8 +1,8 @@
 const yt1 = {
 name:"ravi",
 content:"programming",
-feature: function(){
-    console.log(`very fast teaching  of ${this.name} and fav channel of ${this.content} `);
+feature: function(rating,support){
+    console.log(`very fast teaching  of ${this.name} and fav channel of ${this.content} and give them ${rating} and ${support}`);
 }
 }
 const yt2 = {
@@ -11,7 +11,7 @@ content:"programming and dsa ",
 
 }
 
-yt1.feature();
-
-yt1.feature.call(yt2) // yt1 ke method ko use kr sakte hai hai yt2 me 👍
+yt1.feature(5,"support");
+// call method 
+yt1.feature.call(yt2,3,"support") // yt1 ke method ko use kr sakte hai hai yt2 me 👍
 
