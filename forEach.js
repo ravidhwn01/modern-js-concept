@@ -20,3 +20,23 @@ let monk = "this is my pet!"
 for(let item of monk){
     console.log(item);
 }
+
+const data = {
+    name:"ravi",
+    age:34,
+    city:"jaipur"
+}
+
+// for in loop work  on object's and shows properties of object
+for(let prop in data){
+    console.log(prop.length);
+}
+//output
+// 4
+// 3
+// 4
+// for(let prop in arr){
+//     console.log(prop);
+// }
+
+
